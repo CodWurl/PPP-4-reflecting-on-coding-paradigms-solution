@@ -8,8 +8,9 @@ def flatten_and_sort(array):
                 out.append(i)
             else:
                 out.append(item)
-                return sorted(out)
-        print(flatten_and_sort([1,[55,17,12],3,[22,19,35],9,2]))
+                
+    return sorted(out)
+print(flatten_and_sort([1,[55,17,12],3, [22,19,35],9,2]))
    
 
 '''
