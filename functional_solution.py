@@ -11,6 +11,21 @@ def flatten_and_sort(array):
                 
     return sorted(out)
 
-print(flatten_and_sort([1,[55,17,12],3, [22,19,35],9,2]))
+first_collection=[1,[55,17,12],3, [22,19,35],9,2]
+print(flatten_and_sort(first_collection))
+print(first_collection)
    
 
+"""
+How does this solution ensure data immutability?
+    Passes back a different collection than the one passed in
+    
+Is this solution a pure function?  Why or why not?
+    Yes- it does not produce side effects and does not retain state
+    
+Is this solution a higher order function? Why or why not?
+    No-This seems ok
+    
+Why in particular is functional programming a helpful paradigm when solving this problem?
+    Because it is side effect free and because it uses a pure function the result will be consistent and predictable
+"""
