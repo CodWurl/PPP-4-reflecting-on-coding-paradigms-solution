@@ -3,11 +3,14 @@
 def flatten_and_sort(array):
     out = []
     for item in array:
-        for i in item:
-            out.append(i)
-    return sorted(out)
-
-print(flatten_and_sort([1, [2,5,4], 3,9,2,[55, 22]]))
+        if type(item) == list:
+            for i in item:
+                out.append(i)
+            else:
+                out.append(item)
+                return sorted(out)
+        print(flatten_and_sort([1,[55,17,12],3,[22,19,35],9,2]))
+   
 
 '''
 Make sure to answer the following questions about your coding process:
