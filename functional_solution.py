@@ -6,7 +6,7 @@ def flatten_and_sort(array):
         if type(item) == list:
             for i in item:
                 out.append(i)
-            else:
+        else:
                 out.append(item)
                 
     return sorted(out)
