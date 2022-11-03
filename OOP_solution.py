@@ -27,7 +27,7 @@ class AnakinsPod(Podracer):
 # This class should have a special method called flame_jet that will update the condition of another podracer to "trashed".
 class SebulbasPod(Podracer):
   def __init__(self, max_speed, condition, price):
-    super.init(max_speed, condition, price)
+    super().__init__(max_speed, condition, price)
   
   def flame_jet(self,other):
     other.condition = "trashed"
@@ -48,12 +48,10 @@ Make sure to answer the following prompts about your coding experience:
 
 How does this solution demonstrate the four pillars of OOP? (It may not demonstrate all of them, describe only those that apply)
 
- Encapsulation: The Podracer class is encapsulated by the AnakinsPod and SebulbasPod classes. 
-# The classes themselves are examples of encapsulation because they hold data and methods that are related to each other.
-# Abstraction: The AnakinsPod and SebulbasPod classes inherit the attributes and methods of the Podracer class. 
-# This hides the implementation details of the Podracer class from the user.
-# Inheritance: We can see inheritance in the AnakinsPod and SebulbasPod classes because we resuse the code from the Podracer class without rewriting it.
-# Polymorphism: We dont use polymorphism in this solution, but we could have used it to create a method that would work for both classes.
+# Encapsulation: It keeps max speed, condition, etc in the base class and extended classes use those base class attributes
+# Abstraction: Abstracts away methods for indicating repair and setting initial values.
+# Inheritance: Each pod inherits the condition and other aspects of the pod parent.
+# Polymorphism: You can call the repair method on any decedent of pod
 
 
 Would it have been easier to implement a solution to this problem using a different coding style? Why or why not?
