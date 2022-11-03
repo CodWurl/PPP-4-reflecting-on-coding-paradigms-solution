@@ -19,6 +19,7 @@ class AnakinsPod(Podracer):
       super().__init__(max_speed, condition, price)
   
   def boost(self):
+    print("Boosted speed by 2")
     self.max_speed *= 2
     
   def race_status(self):
@@ -41,6 +42,8 @@ anakins.race_status()
 anakins.boost()
 anakins.race_status()
 sebublas.flame_jet(anakins)
+anakins.race_status()
+anakins.repair()
 anakins.race_status()
 
  
