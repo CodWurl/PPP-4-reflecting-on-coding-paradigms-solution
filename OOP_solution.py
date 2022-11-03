@@ -10,6 +10,7 @@ class Podracer:
 
   # Define a repair() method that will update the condition of the podracer to "repaired".
   def repair(self):
+    print("R2 unit ran some repairs")
     self.condition = "repaired"
     
 # Define a new class, AnakinsPod that inherits the Podracer class, but also contains a special method called boost that will multiply max_speed by 2.
@@ -30,6 +31,7 @@ class SebulbasPod(Podracer):
     super().__init__(max_speed, condition, price)
   
   def flame_jet(self,other):
+    print("flamed another pod")
     other.condition = "trashed"
     
 anakins = AnakinsPod(2500, "new", 50_000_000)
@@ -55,8 +57,12 @@ How does this solution demonstrate the four pillars of OOP? (It may not demonstr
 
 
 Would it have been easier to implement a solution to this problem using a different coding style? Why or why not?
+This is appropriate use of OOP because each pod is an individual that descends from a base class that has 
+built in functionality
 
 How in particular did Object Oriented Programming assist in the solving of this problem?
+See above --- using OOP you can create many additional pods without recreating all the mehtods
+and properties of the first pod.
 
 '''
 
