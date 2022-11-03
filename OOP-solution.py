@@ -15,7 +15,7 @@ class Podracer:
 # Define a new class, AnakinsPod that inherits the Podracer class, but also contains a special method called boost that will multiply max_speed by 2.
 class AnakinsPod(Podracer):
   def __init__(self, max_speed, condition, price):
-    super.init(max_speed, condition, price)
+      super().__init__(max_speed, condition, price)
   
   def boost(self):
     self.max_speed *= 2
