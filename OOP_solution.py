@@ -33,7 +33,7 @@ class SebulbasPod(Podracer):
     other.condition = "trashed"
     
 anakins = AnakinsPod(2500, "new", 50_000_000)
-sebulbas = SebulbasPod(3500, "refurbished", 25_000_000)
+sebublas = SebulbasPod(3500, "refurbished", 25_000_000)
 
 anakins.race_status()
 anakins.boost()
